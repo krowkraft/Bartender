@@ -15,7 +15,7 @@ const POTION_ITEM_NAME = 'potion';
 let musicPlaying = false;
 
 const randomMessages = [
-  "🍷 Come to the Wine Shop! By the Jungle Shop and the Bar! Only 1 Diamond!",
+  "Come to the Bar! 1 Diamond for 1 Wine! By the Jungle Shop and The Bar!"
 ];
 
 // === Bot Startup ===
@@ -74,7 +74,7 @@ bot.on('playerCollect', async (collector, collected) => {
         bot.chat('❌ No potion in inventory.');
       }
     } else {
-      bot.chat("");
+      bot.chat("❌ No valid token found.");
     }
   }, 1000);
 });
